@@ -1,0 +1,14 @@
+ext {
+	versions = [:]
+	libs = [:]
+}
+
+versions += [
+	logback     : '1.2.3',
+	scalaLibrary: '2.12.12',
+]
+
+libs += [
+	logback     : "ch.qos.logback:logback-classic:$versions.logback",
+	scalaLibrary: "org.scala-lang:scala-library:$versions.scalaLibrary",
+]
